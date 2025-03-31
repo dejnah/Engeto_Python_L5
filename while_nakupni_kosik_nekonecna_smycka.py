@@ -10,7 +10,7 @@
 kosik_1 = list()
 
 while True:
-    produkt = (input("Vlož produkt do košíku: "))
+    produkt = (input("Zadej typ zboží [nebo 'hotovo' pro ukončení]: "))
     if produkt.lower() == "hotovo":
         break
     kosik_1.append(produkt)
@@ -27,7 +27,7 @@ kosik_2 = list()
 switch = True
 
 while switch:
-    produkt = (input("Vlož produkt do košíku: "))
+    produkt = (input("Zadej typ zboží [nebo 'hotovo' pro ukončení]: "))
     if produkt.lower() == "hotovo":
         switch = False.         # Ukončí cyklus
     else:
