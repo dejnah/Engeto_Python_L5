@@ -18,32 +18,25 @@
 
 x = 0
 y = 1
-vysledky = [0, 1]
+vysledky = [x, y]
 delka_rady = 15
-delka_aktualni = len(vysledky)
 
-while delka_aktualni < delka_rady:  
-    #cislo = x + y
-    #vysledky.append(cislo)  
-    #y = vysledky[-1]
-    #x = vysledky[-2]
-
-    cislo = vysledky[-1] + vysledky[-2]
-    vysledky.append(cislo)
-    delka_aktualni += 1         #i = i + 1
+while len(vysledky) < delka_rady:         # Inicializace prvních dvou čísel
+    cislo = vysledky[-1] + vysledky[-2]   # Součet dvou posledních čísel
+    vysledky.append(cislo)                # Přidání do seznamu
 
 print(f"Fibonacci: {vysledky}")
 
 #nebo verze jiná:
 x = 0
 y = 1
-vysledky = []  # Seznam pro uložení výsledků
+vysledky = []           # Seznam pro uložení výsledků
 delka_rady = 15
 
 while len(vysledky) < delka_rady:
     vysledky.append(x)  # Přidání aktuálního čísla do seznamu
     nove_cislo = x + y  # Vypočítání dalšího čísla
-    x = y  # Posun hodnot
+    x = y               # Posun hodnot
     y = nove_cislo
 
 print(f"Fibonacci: {vysledky}")  # Formátovaný výstup  # Výpis výsledků
