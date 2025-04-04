@@ -28,8 +28,9 @@
 
 pismena = ["a", "a", "b", "c", "d", "a", "e", "g", "m"]
 
-print(f"Začátek: {pismena}")
-while len(pismena) > 0:
+#print(f"Začátek: {pismena}")
+print("Začátek: ", ", ".join(pismena))
+while len(pismena) > 0: #můžu zapsat jako: "while pismena"
     vstup = input("Které písmeno chceš vyhodit? ").strip().lower()
             #vstup odstraní mezery (.strip) a upraví na malé písmeno (.lower)
     if vstup in pismena:
